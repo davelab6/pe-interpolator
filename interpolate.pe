@@ -1,0 +1,17 @@
+#!/usr/bin/fontforge
+
+effect = "Interpolate"
+
+if($argc == 5)
+	Open($1)
+	SelectWorthOutputting()
+
+	foreach
+		CorrectDirection()
+		InterpolateFonts(Strtol($4), $2)
+	endloop
+
+	Generate($3)
+
+else
+	Print("error : missing arguments...!")

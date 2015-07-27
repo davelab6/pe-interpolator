@@ -1,0 +1,5 @@
+light 0
+mediumLight 25
+medium 50
+mediumBold 75
+Bold 100
