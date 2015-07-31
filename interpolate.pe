@@ -10,10 +10,10 @@ if($argc == 8)
 		CorrectDirection()
 		InterpolateFonts(Strtol($7), $2)
 	endloop
-
+	
 	SetFontNames($4, $3, $5, $6)
 
-	Generate($4 + ".otf")
+	Generate($4 + ".ttf")
 
 else
 	Print("error : missing arguments...!")
